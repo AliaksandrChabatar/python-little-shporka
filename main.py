@@ -441,10 +441,10 @@ def callback_inline(call):
     <b>Строка (String) str</b> в Python – <u>это последовательность символов, заключенная в кавычки, неизменяемый упорядоченный тип данных</u> (после создания строки её больше нельзя изменять).
     <a href="https://pythonchik.ru/osnovy/python-stroki">Больше информации по строкам в Python</a>''',
                              reply_markup=backkeyboard, parse_mode='HTML')
-            img = open('string 01.jpg', 'rb')
+            img = open('string_methods 01.jpg', 'rb')
             bot.send_photo(chat_id=call.message.chat.id, photo=img, reply_markup=closekeyboard)
             img.close()
-            img_2 = open('string 02.jpg', 'rb')
+            img_2 = open('string_methods 02.jpg', 'rb')
             bot.send_photo(chat_id=call.message.chat.id, photo=img_2, reply_markup=closekeyboard)
             img_2.close()
         elif call.data == "30":
